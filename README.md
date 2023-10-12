@@ -1,4 +1,5 @@
-##Video captioning setup
+## Video captioning setup
+
 BMT 도구를 사용하여 video captioning 모델을 설정하고 학습하는 기능입니다.
 1. BMT Repository Clone
 2. feature 및 단어 임베딩 다운로드
@@ -33,7 +34,7 @@ python main.py \
 - VGGish 특징은 **`vggish`** conda 환경에서 추출합니다.
 - 메인 BMT 디렉토리로 복귀한 후, 필요한 인수와 함께 **`single_video_prediction.py`** 스크립트를 실행하여 **`bmt`** conda 환경을 활성화합니다.
 
-##Real-time captioning과 데이터 전송
+## Real-time captioning과 데이터 전송
 특징 추출과 캡셔닝이 실시간으로 이루어지도록 하기 위해 앞의 구현을 통합적으로 send1.py 스크립트를 구현하고 생성된 캡션은 웹소켓을 사용하여 JSON 형식으로 서버에 전송됩니다.
 
 - `def run_command(command):` 주어진 **`command`**를 외부 명령어로 실생한 후 실행한 명령어의 표준 출력과 표준 오류를 반환합니다.
